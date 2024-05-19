@@ -14,14 +14,14 @@ import lifelines.datasets
 import matplotlib.pyplot as plt
 
 # Variables to change 
-IDs_filename = r'SARC TRA TRB RNASeq.csv' # Set this to a file with two columns, matched patient IDs and non-matched
-clin_filename = r'sarc_tcga_pan_can_atlas_2018_clinical_data.tsv' # Set this to the desired tsv file
+filepath = r'C:\Users\ ... ' # Edit this and the filename as needed
+IDs_filename = r'... .csv' # Set this to a file with two columns, with patient IDs (e.g., TCGA-XYZ) from each of the two desired comparison groups
+clin_filename = r'... .tsv' # Set this to the clinical data tsv file, as taken from cbioportal
 all_charts = False #toggle whether you need all charts at once or not
 desired_survival_type = 0 # Set this to desired survival type:
                           #  0 = Disease Free, 1 = Progression Free, 2 = Disease Specific, 3 = Overall
 
 # Additional variables
-filepath = r'C:\Users\utska\OneDrive\Med School\Research\Genomics\Raw Data\Clinical Outcomes'
 survival_names = ['Disease Free', 'Progression Free', 'Disease Specific', 'Overall']
 survival_types = ['Disease Free', 'Progress', '-specific', 'Overall']
 
